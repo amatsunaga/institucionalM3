@@ -4,8 +4,6 @@ import { AsideMenu } from "../AsideMenu/AsideMenu";
 
 import styles from "./MainLayout.module.scss";
 
-// import "../../assets/svg/Vector.svg";
-
 const MainLayout = () => {
   return (
     <main className={styles["main-container"]}>
@@ -17,6 +15,7 @@ const MainLayout = () => {
       <h1 className={styles["main-title"]}>Institucional</h1>
       <div className={styles["main-content"]}>
         <AsideMenu />
+        <div className={styles["horizontal-divider"]}></div>
         <Outlet />
       </div>
     </main>

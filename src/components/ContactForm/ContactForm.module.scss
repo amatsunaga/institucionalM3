@@ -1,0 +1,181 @@
+.form-wrapper {
+  width: 100%;
+  padding-bottom: 26.56px;
+  position: relative;
+  // max-width: 720px;
+  // min-height: 100vh;
+  // margin: 0 auto;
+  // padding: 0 12px;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @media screen and (width >= 2500px) {
+    padding-bottom: 40px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+
+    label {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #100d0e;
+      padding: 0 15px 12px;
+
+      @media screen and (width >= 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+
+    input {
+      background: #ffffff;
+      border: 1px solid #100d0e;
+      border-radius: 25px;
+      padding: 15px 20px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      outline: 0;
+
+      @media screen and (width >= 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+
+      &::placeholder {
+        color: #b9b7b7;
+      }
+    }
+  }
+
+  .invalid-form-feedback {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ff0000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    @media screen and (width >= 2500px) {
+      font-size: 24px;
+      line-height: 28px;
+      top: 17px;
+    }
+  }
+
+  .terms-col {
+    margin: 1.58px 0 12.6px;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (width >= 2500px) {
+      font-size: 28px;
+      line-height: 33px;
+      margin: 0 0 12.85px;
+    }
+
+    span {
+      // font-family: "Proxima Nova"; Adobe Fonts
+      color: #ff0000;
+    }
+
+    label {
+      color: #100d0e;
+      text-decoration: underline;
+    }
+
+    // .custom-checkbox {
+    //   border: 1px solid #000000;
+    //   border-radius: 3px;
+    //   width: 34.4px;
+    //   height: 33.15px;
+    //   margin: 0 0 0 4.28px;
+
+    //   // display: inline-block;
+    //   // position: absolute;
+    //   // bottom: 2.2px;
+    // }
+
+    input {
+      // talvez tenha que substituir o checkbox original - não tá pegando as bordas direito e o alinhamento está errado, tem que ser no underline. considerar as bordas na medida do input original ou do custom?
+      width: 18.64px;
+      height: 18px;
+      margin: 0 0 0 4.28px;
+      // opacity: 0;
+
+      @media screen and (width >= 2500px) {
+        width: 36.4px;
+        height: 35.15px;
+      }
+    }
+  }
+
+  .submit-button {
+    background: #000000;
+    border-radius: 25px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    padding: 17px 0;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (width >= 2500px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    &:hover {
+      background: #292929;
+    }
+  }
+
+  .success-message {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #008000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media screen and (width >= 2500px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

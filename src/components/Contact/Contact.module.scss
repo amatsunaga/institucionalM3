@@ -1,0 +1,19 @@
+.section-container {
+  margin-left: 30px;
+  padding: 10px 0;
+
+  .section-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000; // #292929 ??
+    margin: 0 0 12px;
+
+    @media screen and (width >= 2500px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+}

@@ -3,7 +3,6 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  border-right: 1px solid #000000;
 
   li {
     padding: 10px 16px;
@@ -24,8 +23,17 @@
       }
     }
 
+    // &.active {
+    //   background: #000000;
+
+    // a {
+    //   font-weight: 700;
+    //   color: #ffffff;
+    // }
+    // }
+
     &:hover {
-      background: #000000;
+      background: #292929;
 
       a {
         font-weight: 700;

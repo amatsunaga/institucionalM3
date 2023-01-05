@@ -78,10 +78,20 @@
 
   .main-content {
     display: grid;
-    grid-template-columns: 302px 1fr;
+    grid-template-columns: 302px 1px 1fr;
 
     @media screen and (width >= 2500px) {
-      grid-template-columns: 590px 1fr;
+      grid-template-columns: 590px 1px 1fr;
+    }
+
+    .horizontal-divider {
+      width: 1px;
+      height: 285px;
+      background: #000000;
+
+      @media screen and (width >= 2500px) {
+        height: 465px;
+      }
     }
   }
 }
