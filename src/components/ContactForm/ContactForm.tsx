@@ -4,9 +4,9 @@ import {
   Form,
   Field,
   ErrorMessage,
-//   FormikHelpers,
-//   FormikBag,
-//   FormikState,
+  //   FormikHelpers,
+  //   FormikBag,
+  //   FormikState,
 } from "formik";
 import FormSchema from "../../schema/FormSchema";
 import "./ContactForm.module.scss";
@@ -180,9 +180,11 @@ const ContactForm = () => {
             <button className={styles["submit-button"]} type="submit">
               Cadastre-se
             </button>
-            
+
             {hasSubmitCompleted && (
-              <span className={styles["success-message"]}>*Formulário enviado com sucesso!</span>
+              <span className={styles["success-message"]}>
+                *Formulário enviado com sucesso!
+              </span>
             )}
           </Form>
         )}

@@ -5,6 +5,7 @@ import {
   redirect,
 } from "react-router-dom";
 import { About } from "../components/About/About";
+import { Contact } from "../components/Contact/Contact";
 
 import { MainLayout } from "../components/MainLayout/MainLayout";
 
@@ -40,10 +41,10 @@ const Institucional = () => {
       //     path: "seguranca-e-privacidade",
       //     element: <Security />,
       //   },
-      //   {
-      //     path: "contato",
-      //     element: <Contact />,
-      //   },
+        {
+          path: "contato",
+          element: <Contact />,
+        },
       ],
     },
   ]);

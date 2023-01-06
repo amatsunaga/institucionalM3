@@ -1,0 +1,108 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 25px 100px;
+  border-bottom: 1px solid #c4c4c4;
+
+  .logo-wrapper {
+    .logo-image {
+      width: 136px;
+      height: 26.86px;
+
+      @media screen and (width >= 2500px) {
+        width: 265.62px;
+        height: 50.5px;
+      }
+    }
+  }
+
+  .searchbox-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .searchbox-entry {
+      width: 73.33%; // 264px;
+      padding: 7px 16px;
+      border: 2px solid #f2f2f2;
+      border-radius: 5px;
+      outline: 0;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #c6c6c6; // #000000? #c4c4c4?
+
+      @media screen and (width >= 2500px) {
+        width: 67.26%; //515.62px;
+        padding: 12px 16px;
+
+        font-size: 28px;
+        line-height: 33px;
+      }
+
+      &::placeholder {
+        color: #c4c4c4; // #c6c6c6;
+      }
+    }
+
+    .searchbox-button {
+      height: 18px;
+      width: 18px;
+      background-image: url("../../../assets/svg/search-icon.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 0;
+      outline: 0;
+      position: absolute;
+      right: 12.78%; //46px;
+      top: 8px;
+      padding: 0;
+
+      @media screen and (width >= 2500px) {
+        width: 35.15px;
+        height: 35.15px;
+        right: 16.37%; //125.52px;
+        top: 12.925px;
+      }
+    }
+  }
+
+  .login-cart-wrapper {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    justify-content: right;
+
+    .login-button {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+
+      @media screen and (width >= 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+
+    .cart-icon {
+      img {
+        width: 28px;
+        height: 28px;
+
+        @media screen and (width >= 2500px) {
+          width: 54.68px;
+          height: 54.68px;
+        }
+      }
+    }
+  }
+}
