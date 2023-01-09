@@ -1,0 +1,38 @@
+.container {
+  // background-color: blue;
+
+  .menu-list {
+    // background-color: blue;
+  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+  
+    li {
+      //   transition: all 0.2s ease-in-out;
+  
+      a {
+        svg {
+          width: 35px;
+          height: 35px;
+  
+          @media screen and (width >= 2500px) {
+            width: 70px;
+            height: 70px;
+          }
+  
+          // &:hover {
+          //   border-radius: 50%;
+          //   background: #292929;
+          //   color: white;
+          // }
+        }
+      }
+    }
+  }
+}
+
+
