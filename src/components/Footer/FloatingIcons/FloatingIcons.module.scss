@@ -1,0 +1,57 @@
+.floating-icons-wrapper {
+//   background-color: red;
+  position: fixed;
+  right: 16px;
+  bottom: 190px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  @media screen and (width >= 2500px) {
+    bottom: 229.24px;
+  }
+
+  .whatsapp-button {
+    border: 0;
+    background: transparent;
+
+    img {
+      width: 34px;
+      height: 34px;
+      display: block;
+
+      @media screen and (width >= 2500px) {
+        width: 66px;
+        height: 66px;
+      }
+    }
+  }
+
+  .up-button {
+    background: #c4c4c4;
+    border: 0;
+    border-radius: 50%;
+    padding: 13.5px 10.5px;
+    width: 34px;
+    height: 34px;
+
+    @media screen and (width >= 2500px) {
+        width: 66px;
+        height: 66px;
+      }
+
+    img {
+      width: 13px;
+      height: 7px;
+      display: block;
+      margin: 0 auto;
+
+      @media screen and (width >= 2500px) {
+        width: 24.14px;
+        height: 13px;
+      }
+    }
+  }
+}

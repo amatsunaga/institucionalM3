@@ -1,4 +1,5 @@
 import React from "react";
+import { FloatingIcons } from "./FloatingIcons/FloatingIcons";
 
 import styles from "./Footer.module.scss";
 import { FooterBottom } from "./FooterBottom/FooterBottom";
@@ -16,6 +17,7 @@ const Footer = () => {
           <SocialMedia />
           <p>www.loremipsum.com</p>
         </div>
+        <FloatingIcons />
       </div>
       <FooterBottom />
     </footer>
