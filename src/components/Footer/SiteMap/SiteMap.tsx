@@ -52,46 +52,58 @@ const rightInstitucionalLinks = [
     phoneNumber: "(11) 4159 9504",
     value: "politica-de-privacidade",
   },
-  // {
-  //   name: "Segurança",
-  //   value: "seguranca-e-privacidade",
-  // },
-  // {
-  //   name: "Seja um Revendedor",
-  //   value: "seja-um-revendedor",
-  // },
 ];
 
 const SiteMap = () => {
   return (
     <div className={styles["container"]}>
       <ul className={styles["menu-list"]}>
-        <h4 className={styles["subtitle"]}>Institucional
-        </h4>
-        {leftInstitucionalLinks.map((item, index) => (
-          <li key={index}>
-            <Link to={item.value}>{item.name}</Link>
-          </li>
-        ))}
+        <div className={styles["subtitle"]}>
+          <h4 className={styles["subtitle-text"]}>Institucional</h4>
+          {window.innerWidth <= 1024 && (
+            <span className={styles["open-icon"]}>+</span>
+          )}
+        </div>
+        <div className={styles["list-items"]}>
+          {leftInstitucionalLinks.map((item, index) => (
+            <li key={index}>
+              <Link to={item.value}>{item.name}</Link>
+            </li>
+          ))}
+        </div>
       </ul>
 
       <ul className={styles["menu-list"]}>
-        <h4 className={styles["subtitle"]}>Dúvidas</h4>
-        {duvidasLinks.map((item, index) => (
-          <li key={index}>
-            <Link to={item.value}>{item.name}</Link>
-          </li>
-        ))}
+        <div className={styles["subtitle"]}>
+          <h4 className={styles["subtitle-text"]}> Dúvidas</h4>
+          {window.innerWidth <= 1024 && (
+            <span className={styles["open-icon"]}>+</span>
+          )}
+        </div>
+        <div className={styles["list-items"]}>
+          {duvidasLinks.map((item, index) => (
+            <li key={index}>
+              <Link to={item.value}>{item.name}</Link>
+            </li>
+          ))}
+        </div>
       </ul>
 
       <ul className={styles["menu-list"]}>
-        <h4 className={styles["subtitle"]}>FALE CONOSCO</h4>
-        {rightInstitucionalLinks.map((item, index) => (
-          <li key={index}>
-            <p>{item.name}</p>
-            <Link to={item.value}>{item.phoneNumber}</Link>
-          </li>
-        ))}
+        <div className={styles["subtitle"]}>
+          <h4 className={styles["subtitle-text"]}>Fale Conosco</h4>
+          {window.innerWidth <= 1024 && (
+            <span className={styles["open-icon"]}>+</span>
+          )}
+        </div>
+        <div className={styles["list-items"]}>
+          {rightInstitucionalLinks.map((item, index) => (
+            <li key={index}>
+              <p>{item.name}</p>
+              <Link to={item.value}>{item.phoneNumber}</Link>
+            </li>
+          ))}
+        </div>
       </ul>
     </div>
   );
@@ -113,3 +125,21 @@ export { SiteMap };
 // };
 
 // export { AsideMenu };
+
+{
+  /* <div className={styles["subtitle"]}>
+<h4 className={styles["subtitle-text"]}>Institucional</h4>
+{window.innerWidth <= 1024 && (
+  <span className={styles["open-icon"]}>+</span>
+)}
+</div>
+<div className={styles["list-items"]}>
+<ul className={styles["menu-list"]}>
+  {leftInstitucionalLinks.map((item, index) => (
+    <li key={index}>
+      <Link to={item.value}>{item.name}</Link>
+    </li>
+  ))}
+</ul>
+</div> */
+}

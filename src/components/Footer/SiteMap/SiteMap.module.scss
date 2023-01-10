@@ -9,6 +9,12 @@
     gap: 293px;
   }
 
+  @media screen and (width <= 1024px) {
+    width: 100%;
+    grid-template-columns: 100%;
+    gap: 12px;
+  }
+
   .menu-list {
     margin: 0;
     padding: 0;
@@ -19,60 +25,85 @@
     gap: 12px;
 
     .subtitle {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      text-transform: uppercase;
-      color: #303030;
-      margin: 0;
+      // background: yellow;
+      // display: flex;
 
-      @media screen and (width >= 2500px) {
-        font-size: 28px;
-        line-height: 33px;
-      }
-    }
-
-    li {
-      //   transition: all 0.2s ease-in-out; hover? active?
-
-      a {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        text-transform: capitalize;
-        text-decoration: none;
-        color: #303030;
-
-        @media screen and (width >= 2500px) {
-          font-size: 24px;
-          line-height: 28px;
-        }
+      @media screen and (width <= 1024px) {
+        display: flex;
+        justify-content: space-between;
       }
 
-      p {
-        margin: 0 0 12px;
+      .subtitle-text {
         font-family: "Roboto";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
-        text-transform: capitalize;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
         color: #303030;
+        margin: 0;
 
         @media screen and (width >= 2500px) {
-          font-size: 24px;
-          line-height: 28px;
+          font-size: 28px;
+          line-height: 33px;
+        }
+
+        @media screen and (width <= 1024px) {
+          text-transform:none;
         }
       }
+    }
 
-      &:last-child {
-        // hover em vez de last-child?
+    .list-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      @media screen and (width <= 1024px) {
+        display: none;
+      }
+
+      li {
+        //   transition: all 0.2s ease-in-out; hover? active?
+        // background-color: red;
+
         a {
-          text-decoration: underline;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: capitalize;
+          text-decoration: none;
+          color: #303030;
+
+          @media screen and (width >= 2500px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+
+        p {
+          margin: 0 0 12px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: capitalize;
+          color: #303030;
+
+          @media screen and (width >= 2500px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+
+        &:last-child {
+          // hover em vez de last-child?
+          a {
+            text-decoration: underline;
+          }
         }
       }
     }

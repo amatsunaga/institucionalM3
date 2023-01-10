@@ -6,6 +6,16 @@
   //   gap: 110.41px;
   padding: 15px 100px;
 
+  @media screen and (width <= 1024px) {
+    display: grid;
+    grid-template-areas:
+    "paymentSolutions"
+    "address"
+    "authors";
+    gap: 15px;
+    padding: 15px 16px;
+  }
+
   .address {
     font-family: "Roboto";
     font-style: normal;
@@ -19,10 +29,14 @@
     p {
       margin: 0;
     }
-
+    
     @media screen and (width >= 2500px) {
       font-size: 20px;
       line-height: 23px;
+    }
+
+    @media screen and (width <= 1024px) {
+      grid-area: address;
     }
   }
 
@@ -33,6 +47,10 @@
     gap: 12px;
     // justify-self: center;
     // background-color: cyan;
+
+    @media screen and (width <= 1024px) {
+      grid-area: paymentSolutions;
+    }
 
     .menu-list {
       // background-color: blue;
@@ -94,6 +112,10 @@
     gap: 13px;
     align-items: center;
     // justify-self: end;
+
+    @media screen and (width <= 1024px) {
+      grid-area: authors;
+    }
 
     p {
       font-family: "Roboto";

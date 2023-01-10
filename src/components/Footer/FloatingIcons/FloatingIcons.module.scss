@@ -13,6 +13,10 @@
     bottom: 229.24px;
   }
 
+  @media screen and (width <= 1024px) {
+    bottom: 51px;
+  }
+
   .whatsapp-button {
     border: 0;
     background: transparent;
