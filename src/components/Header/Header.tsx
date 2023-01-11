@@ -1,15 +1,16 @@
-import React from "react";
+// import React from "react";
 
 import styles from "./Header.module.scss";
-import { HeaderBottom } from "./HeaderBottom/HeaderBottom";
-import { HeaderTop } from "./HeaderTop/HeaderTop";
+
+import { HeaderDesktop } from "./HeaderDesktop/HeaderDesktop";
+import { HeaderMobile } from "./HeaderMobile/HeaderMobile";
 
 const Header = () => {
   return (
-    <header className={styles["container"]}>
-      <HeaderTop />
-      <HeaderBottom />
-    </header>
+    <>
+      <HeaderMobile className={`${styles["container"]} ${styles["header-mobile"]}`} />
+      <HeaderDesktop className={`${styles["container"]} ${styles["header-desktop"]}`} />
+    </>
   );
 };
 

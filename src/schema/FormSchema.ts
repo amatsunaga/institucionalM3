@@ -9,4 +9,6 @@ export default Yup.object().shape({
   phoneNumber: Yup.string().required("*Campo Obrigatório"),
   instagram: Yup.string(),
   acceptTerms: Yup.boolean().required("*Campo Obrigatório"),
+
+  searchInput: Yup.string().required(""),
 });
