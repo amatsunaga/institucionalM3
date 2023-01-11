@@ -7,55 +7,8 @@
     margin-bottom: 84px;
   }
 
-  .breadcrumbs {
-    display: flex;
-    gap: 9.72px;
-    align-items: center;
-    margin-bottom: 80px;
-
-    @media screen and (width >= 2500px) {
-      gap: 12px;
-    }
-
-    .home-icon {
-      width: 16px;
-      height: 16px;
-      background: url("../../assets/svg/home-icon.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @media screen and (width >= 2500px) {
-        width: 31.22px;
-        height: 31.25px;
-      }
-    }
-
-    .arrow-icon {
-      width: 4.56px;
-      height: 8px;
-      background-image: url("../../assets/svg/arrow-icon.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @media screen and (width >= 2500px) {
-        width: 8.9px;
-        height: 15.62px;
-      }
-    }
-
-    .current-location {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #c4c4c4;
-      margin: 0;
-
-      @media screen and (width >= 2500px) {
-        font-size: 24px;
-      }
-    }
+  @media screen and (width <= 1024px) {
+    margin: 30px 16px 80px;
   }
 
   .main-title {
@@ -74,6 +27,10 @@
       font-size: 48px;
       line-height: 56px;
     }
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 40px;
+    }
   }
 
   .main-content {
@@ -84,6 +41,10 @@
       grid-template-columns: 590px 1px 1fr;
     }
 
+    @media screen and (width <= 1024px) {
+      grid-template-columns: 1fr;
+    }
+
     .vertical-divider {
       width: 1px;
       height: 285px;
@@ -91,6 +52,10 @@
 
       @media screen and (width >= 2500px) {
         height: 465px;
+      }
+
+      @media screen and (width <= 1024px) {
+        display: none;
       }
     }
   }

@@ -4,9 +4,18 @@
   list-style: none;
   text-decoration: none;
 
+  @media screen and (width <= 1024px) {
+    margin-bottom: 30px;
+  }
+
   li {
     padding: 10px 16px;
     transition: all 0.2s ease-in-out;
+    // background-color: yellow;
+
+    @media screen and (width <= 1024px) {
+      width: calc(100% - 32px);
+    }
 
     a {
       font-family: "Roboto";
@@ -33,7 +42,8 @@
     // }
 
     &:hover {
-      background: #292929;
+      // &.active
+      background: #292929; // #000000;
 
       a {
         font-weight: 700;

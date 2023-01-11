@@ -1,0 +1,51 @@
+.breadcrumbs {
+  display: flex;
+  gap: 9.72px;
+  align-items: center;
+  margin-bottom: 80px;
+
+  @media screen and (width >= 2500px) {
+    gap: 12px;
+  }
+
+  .home-icon {
+    img {
+      width: 16px;
+      height: 16px;
+      display: block;
+
+      @media screen and (width >= 2500px) {
+        width: 31.22px;
+        height: 31.25px;
+      }
+    }
+  }
+
+  .arrow-icon {
+    img {
+      width: 4.56px;
+      height: 8px;
+      display: block;
+
+      @media screen and (width >= 2500px) {
+        width: 8.9px;
+        height: 15.62px;
+      }
+    }
+  }
+
+  .current-location {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #c4c4c4;
+    margin: 0;
+    // padding: 0;
+
+    @media screen and (width >= 2500px) {
+      font-size: 24px;
+    }
+  }
+}

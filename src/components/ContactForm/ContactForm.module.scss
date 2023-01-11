@@ -49,7 +49,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
-      color: #000000;
+      color: #000000; //#b9b7b7? #100d0e?
       outline: 0;
 
       @media screen and (width >= 2500px) {
@@ -148,7 +148,8 @@
     letter-spacing: 0.05em;
     color: #ffffff;
     text-transform: uppercase;
-    border: none;
+    border: 0;
+    outline: 0;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 

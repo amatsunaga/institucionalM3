@@ -2,6 +2,11 @@
   margin-left: 30px;
   padding: 10px 0;
 
+  @media screen and (width <= 1024px) {
+    padding: 0;
+    margin: 0;
+  }
+
   .section-title {
     font-family: "Roboto";
     font-style: normal;
@@ -14,6 +19,10 @@
     @media screen and (width >= 2500px) {
       font-size: 48px;
       line-height: 56px;
+    }
+
+    @media screen and (width <= 1024px) {
+      text-align: center;
     }
   }
 }
