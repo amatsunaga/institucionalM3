@@ -1,5 +1,4 @@
 .floating-icons-wrapper {
-//   background-color: red;
   position: fixed;
   right: 16px;
   bottom: 190px;
@@ -9,6 +8,8 @@
   align-items: center;
   gap: 5px;
 
+  padding: 0;
+
   @media screen and (width >= 2500px) {
     bottom: 229.24px;
   }
@@ -17,8 +18,14 @@
     bottom: 51px;
   }
 
+  @media screen and (width <= 480px) {
+    bottom: 29px;
+    right: 16px;
+  }
+
   .whatsapp-button {
     border: 0;
+    padding: 0;
     background: transparent;
 
     img {

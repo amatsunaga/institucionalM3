@@ -52,6 +52,12 @@
           text-transform:none;
         }
       }
+
+      .open-icon {
+        @media screen and (width > 1024px) {
+          display: none;
+        }
+      }
     }
 
     .list-items {

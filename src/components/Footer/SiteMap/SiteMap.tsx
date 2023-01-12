@@ -60,9 +60,7 @@ const SiteMap = () => {
       <ul className={styles["menu-list"]}>
         <div className={styles["subtitle"]}>
           <h4 className={styles["subtitle-text"]}>Institucional</h4>
-          {window.innerWidth <= 1024 && (
-            <span className={styles["open-icon"]}>+</span>
-          )}
+          <span className={styles["open-icon"]}>+</span>
         </div>
         <div className={styles["list-items"]}>
           {leftInstitucionalLinks.map((item, index) => (
@@ -76,9 +74,7 @@ const SiteMap = () => {
       <ul className={styles["menu-list"]}>
         <div className={styles["subtitle"]}>
           <h4 className={styles["subtitle-text"]}> Dúvidas</h4>
-          {window.innerWidth <= 1024 && (
-            <span className={styles["open-icon"]}>+</span>
-          )}
+          <span className={styles["open-icon"]}>+</span>
         </div>
         <div className={styles["list-items"]}>
           {duvidasLinks.map((item, index) => (
@@ -92,9 +88,7 @@ const SiteMap = () => {
       <ul className={styles["menu-list"]}>
         <div className={styles["subtitle"]}>
           <h4 className={styles["subtitle-text"]}>Fale Conosco</h4>
-          {window.innerWidth <= 1024 && (
-            <span className={styles["open-icon"]}>+</span>
-          )}
+          <span className={styles["open-icon"]}>+</span>
         </div>
         <div className={styles["list-items"]}>
           {rightInstitucionalLinks.map((item, index) => (
@@ -110,36 +104,3 @@ const SiteMap = () => {
 };
 
 export { SiteMap };
-
-// const AsideMenu = () => {
-
-//   return (
-//     <ul className={styles["menu-list"]}>
-//       {AsideMenuItems.map((item, index) => (
-//         <li key={index}>
-//           <Link to={item.value}>{item.name}</Link>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// };
-
-// export { AsideMenu };
-
-{
-  /* <div className={styles["subtitle"]}>
-<h4 className={styles["subtitle-text"]}>Institucional</h4>
-{window.innerWidth <= 1024 && (
-  <span className={styles["open-icon"]}>+</span>
-)}
-</div>
-<div className={styles["list-items"]}>
-<ul className={styles["menu-list"]}>
-  {leftInstitucionalLinks.map((item, index) => (
-    <li key={index}>
-      <Link to={item.value}>{item.name}</Link>
-    </li>
-  ))}
-</ul>
-</div> */
-}

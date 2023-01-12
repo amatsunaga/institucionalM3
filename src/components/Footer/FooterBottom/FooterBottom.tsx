@@ -13,17 +13,6 @@ import PCI from "../assets/vtex-pci-200.svg";
 import VtexIcon from "../assets/vtex-icon.svg";
 import M3Icon from "../assets/m3-icon.svg";
 
-// import { ReactComponent as Master } from "../assets/Master.svg";
-// import { ReactComponent as Visa } from "../assets/Visa.svg";
-// import { ReactComponent as Amex } from "../assets/Diners.svg";
-// import { ReactComponent as Elo } from "../assets/Elo.svg";
-// import { ReactComponent as Hipercard } from "../assets/Hiper.svg";
-// import { ReactComponent as Paypal } from "../assets/Pagseguro.svg";
-// import { ReactComponent as Boleto } from "../assets/Boleto.svg";
-// import { ReactComponent as PCI } from "../assets/vtex-pci-200.svg";
-// import { ReactComponent as VtexIcon } from "../assets/vtex-icon.svg";
-// import { ReactComponent as M3Icon } from "../assets/m3-icon.svg";
-
 const PaymentSolutions = [
   {
     src: Master,
@@ -71,13 +60,19 @@ const FooterBottom = () => {
           ))}
         </ul>
         <span></span>
-        <img src={PCI} alt="Ícone de Certificado PCI 200" />
+        <div>
+          <img src={PCI} alt="Ícone de Certificado PCI 200" />
+        </div>
       </div>
       <div className={styles["authors"]}>
         <p>Powered by</p>
-        <img src={VtexIcon} alt="Logo da VTEX" className={styles["vtex-icon"]} />
+        <img
+          src={VtexIcon}
+          alt="Logo da VTEX"
+          className={styles["vtex-icon"]}
+        />
         <p>Developed by</p>
-        <img src={M3Icon} alt="Logo da M3" className={styles["m3-icon"]}/>
+        <img src={M3Icon} alt="Logo da M3" className={styles["m3-icon"]} />
       </div>
     </div>
   );
