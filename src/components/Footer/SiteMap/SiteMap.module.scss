@@ -15,7 +15,7 @@
     gap: 12px;
   }
 
-  .menu-list {
+  .submenu {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -25,9 +25,6 @@
     gap: 12px;
 
     .subtitle {
-      // background: yellow;
-      // display: flex;
-
       @media screen and (width <= 1024px) {
         display: flex;
         justify-content: space-between;
@@ -49,11 +46,43 @@
         }
 
         @media screen and (width <= 1024px) {
-          text-transform:none;
+          text-transform: none;
         }
+
+        // &.active {
+        // }
       }
 
       .open-icon {
+        position: relative;
+
+        &::before {
+          content: "";
+          background: #000000;
+          width: 7.8px;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &::after {
+          content: "";
+          background: #000000;
+          width: 1px;
+          height: 8.28px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &.active {
+          &::after {
+            display: none;
+          }
+        }
+
         @media screen and (width > 1024px) {
           display: none;
         }
@@ -64,14 +93,11 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
-
-      @media screen and (width <= 1024px) {
-        display: none;
-      }
+      padding: 0;
+      list-style: none;
 
       li {
         //   transition: all 0.2s ease-in-out; hover? active?
-        // background-color: red;
 
         a {
           font-family: "Roboto";
