@@ -1,9 +1,9 @@
 import { Field, Form, Formik, FormikHelpers } from "formik";
+
 import SearchboxSchema from "../../../schema/SearchboxSchema";
 import searchIcon from "../assets/search-icon.svg";
 
 import styles from "./Searchbox.module.scss";
-
 interface FormValues {
   searchInput: string;
 }

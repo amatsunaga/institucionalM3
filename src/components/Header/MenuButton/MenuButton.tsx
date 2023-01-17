@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 
-import styles from "./MenuButton.module.scss";
-
-import menuButton from "../assets/menu-icon.svg";
 import { ModalContext } from "../../../contexts/ModalContext";
+import menuButton from "../assets/menu-icon.svg";
 
-// const openMenu = () => {};
+import styles from "./MenuButton.module.scss";
 
 const MenuButton = () => {
 
