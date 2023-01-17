@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styles from "./Minicart.module.scss";
 
-import minicart from "../assets/cart-icon.svg";
+import minicart from "./assets/cart-icon.svg";
 
 const Minicart = () => {
   return (

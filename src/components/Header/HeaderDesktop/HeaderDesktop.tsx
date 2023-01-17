@@ -1,13 +1,12 @@
 import React from "react";
 
-import styles from "./HeaderDesktop.module.scss";
-
-import { HeaderBottom } from "../HeaderBottom/HeaderBottom";
 import { Logo } from "../Logo/Logo";
 import { Searchbox } from "../Searchbox/Searchbox";
 import { LoginButton } from "../LoginButton/LoginButton";
 import { Minicart } from "../Minicart/Minicart";
+import { HeaderNavbar } from "../HeaderNavbar/HeaderNavbar";
 
+import styles from "./HeaderDesktop.module.scss";
 interface HeaderDesktopProps {
   className: string;
 }
@@ -25,7 +24,7 @@ const HeaderDesktop = (props: HeaderDesktopProps) => {
           <Minicart />
         </div>
       </div>
-      <HeaderBottom />
+      <HeaderNavbar />
     </header>
   );
 };

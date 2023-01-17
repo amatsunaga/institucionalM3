@@ -1,10 +1,10 @@
-import { Field, Form, Formik } from "formik";
-import FormSchema from "../../../schema/FormSchema";
+import { Field, Form, Formik, FormikHelpers } from "formik";
+
+import SearchboxSchema from "../../../schema/SearchboxSchema";
 import searchIcon from "../assets/search-icon.svg";
 
 import styles from "./Searchbox.module.scss";
-
-interface IFormikValues {
+interface FormValues {
   searchInput: string;
 }
 
@@ -13,8 +13,9 @@ const initialValues = {
 };
 
 const Searchbox = () => {
-  const handleSubmit = (values: IFormikValues) => {
+  const handleSubmit = (values: FormValues, { resetForm }: FormikHelpers<FormValues>) => {
     console.log(values);
+    resetForm();
   };
 
   return (
@@ -22,15 +23,14 @@ const Searchbox = () => {
       <Formik
         onSubmit={handleSubmit}
         initialValues={initialValues}
-        validationSchema={FormSchema}
+        validationSchema={SearchboxSchema}
       >
-        {({ errors, touched, resetForm }) => (
+        {({ resetForm }) => (
           <Form className={styles["searchbox-wrapper"]}>
             <Field
               id="searchInput"
               name="searchInput"
               placeholder="Buscar..."
-              // className={errors.name && touched.name && "invalid"}
             />
             <button className={styles["submit-button"]} type="submit">
               <img src={searchIcon} alt="Ícone de busca" />

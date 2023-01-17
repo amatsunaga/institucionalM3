@@ -11,7 +11,6 @@
   li {
     padding: 10px 16px;
     transition: all 0.2s ease-in-out;
-    // background-color: yellow;
 
     @media screen and (width <= 1024px) {
       width: calc(100% - 32px);
@@ -32,23 +31,17 @@
       }
     }
 
-    // &.active {
-    //   background: #000000;
-
-    // a {
-    //   font-weight: 700;
-    //   color: #ffffff;
-    // }
-    // }
-
-    &:hover {
-      // &.active
-      background: #292929; // #000000;
+    &.active {
+      background: #000000;
 
       a {
         font-weight: 700;
         color: #ffffff;
       }
+    }
+
+    &:hover {
+      filter: brightness(1.5);
     }
   }
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import { Searchbox } from "../Searchbox/Searchbox";
-import { Logo } from "../Logo/Logo";
+
 import { MenuButton } from "../MenuButton/MenuButton";
+import { Logo } from "../Logo/Logo";
 import { Minicart } from "../Minicart/Minicart";
+import { Searchbox } from "../Searchbox/Searchbox";
 
 import styles from "./HeaderMobile.module.scss";
-
 interface HeaderMobileProps {
   className: string;
 }

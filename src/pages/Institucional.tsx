@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,28 +19,28 @@ const Institucional = () => {
       children: [
         {
           path: "",
-          loader: () => redirect("/sobre")
+          loader: () => redirect("sobre"),
         },
         {
           path: "sobre",
           element: <About />,
         },
-      //   {
-      //     path: "forma-de-pagamento",
-      //     element: <Payment />,
-      //   },
-      //   {
-      //     path: "entrega",
-      //     element: <Shipping />,
-      //   },
-      //   {
-      //     path: "troca-e-devolucao",
-      //     element: <ExchangeAndReturn />,
-      //   },
-      //   {
-      //     path: "seguranca-e-privacidade",
-      //     element: <Security />,
-      //   },
+        //   {
+        //     path: "forma-de-pagamento",
+        //     element: <Payment />,
+        //   },
+        //   {
+        //     path: "entrega",
+        //     element: <Shipping />,
+        //   },
+        //   {
+        //     path: "troca-e-devolucao",
+        //     element: <ExchangeAndReturn />,
+        //   },
+        //   {
+        //     path: "seguranca-e-privacidade",
+        //     element: <Security />,
+        //   },
         {
           path: "contato",
           element: <Contact />,
