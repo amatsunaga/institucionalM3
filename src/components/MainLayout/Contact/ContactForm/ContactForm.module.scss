@@ -2,14 +2,7 @@
   width: 100%;
   padding-bottom: 26.56px;
   position: relative;
-  // max-width: 720px;
-  // min-height: 100vh;
-  // margin: 0 auto;
-  // padding: 0 12px;
 
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   @media screen and (width >= 2500px) {
     padding-bottom: 40px;
   }
@@ -19,19 +12,19 @@
   }
 
   .form-col {
+    margin-bottom: 12px;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 12px;
 
     label {
+      padding: 0 15px 12px;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
       color: #100d0e;
-      padding: 0 15px 12px;
 
       @media screen and (width >= 2500px) {
         font-size: 28px;
@@ -40,17 +33,18 @@
     }
 
     input {
-      background: #ffffff;
+      padding: 15px 20px;
       border: 1px solid #100d0e;
       border-radius: 25px;
-      padding: 15px 20px;
+      outline: 0;
+      background: #ffffff;
+
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 16px;
-      color: #000000; //#b9b7b7? #100d0e?
-      outline: 0;
+      color: #000000;
 
       @media screen and (width >= 2500px) {
         font-size: 28px;
@@ -64,39 +58,41 @@
   }
 
   .invalid-form-feedback {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #ff0000;
-    position: absolute;
-    top: 15px;
-    right: 20px;
 
     @media screen and (width >= 2500px) {
+      top: 17px;
       font-size: 24px;
       line-height: 28px;
-      top: 17px;
     }
   }
 
   .terms-col {
     margin: 1.58px 0 12.6px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 
     @media screen and (width >= 2500px) {
+      margin: 0 0 12.85px;
       font-size: 28px;
       line-height: 33px;
-      margin: 0 0 12.85px;
     }
 
     span {
@@ -108,24 +104,11 @@
       text-decoration: underline;
     }
 
-    // .custom-checkbox {
-    //   border: 1px solid #000000;
-    //   border-radius: 3px;
-    //   width: 34.4px;
-    //   height: 33.15px;
-    //   margin: 0 0 0 4.28px;
-
-    //   // display: inline-block;
-    //   // position: absolute;
-    //   // bottom: 2.2px;
-    // }
-
     input {
-      // talvez tenha que substituir o checkbox original - não tá pegando as bordas direito e o alinhamento está errado, tem que ser no underline. considerar as bordas na medida do input original ou do custom?
+      margin: 0 0 0 4.28px;
       width: 18.64px;
       height: 18px;
-      margin: 0 0 0 4.28px;
-      // opacity: 0;
+      border-radius: 3px;
 
       @media screen and (width >= 2500px) {
         width: 36.4px;
@@ -135,44 +118,47 @@
   }
 
   .submit-button {
-    background: #000000;
+    width: 100%;
+    padding: 17px 0;
+    border: 0;
     border-radius: 25px;
+    outline: 0;
+    background: #000000;
+
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    width: 100%;
-    padding: 17px 0;
     letter-spacing: 0.05em;
     color: #ffffff;
     text-transform: uppercase;
-    border: 0;
-    outline: 0;
+
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.5);
+    }
 
     @media screen and (width >= 2500px) {
       font-size: 32px;
       line-height: 38px;
     }
-
-    &:hover {
-      background: #292929;
-    }
   }
 
   .success-wrapper {
     .success-message {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
       line-height: 14px;
       color: #008000;
-      position: absolute;
-      bottom: 0;
-      left: 0;
 
       @media screen and (width >= 2500px) {
         font-size: 24px;
