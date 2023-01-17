@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   createBrowserRouter,
   RouterProvider,
   redirect,
 } from "react-router-dom";
-import { About } from "../components/About/About";
-import { Contact } from "../components/Contact/Contact";
+import { About } from "../components/MainLayout/About/About";
+import { Contact } from "../components/MainLayout/Contact/Contact";
+import { ExampleSection } from "../components/MainLayout/ExampleSection/ExampleSection";
 
 import { MainLayout } from "../components/MainLayout/MainLayout";
-
-// import styles from "./Institucional.module.scss";
 
 const Institucional = () => {
   const institucionalRouter = createBrowserRouter([
@@ -19,31 +18,36 @@ const Institucional = () => {
       children: [
         {
           path: "",
-          loader: () => redirect("sobre"),
+          loader: () => redirect("institucionais/sobre"),
         },
         {
-          path: "sobre",
-          element: <About />,
-        },
-        //   {
-        //     path: "forma-de-pagamento",
-        //     element: <Payment />,
-        //   },
-        //   {
-        //     path: "entrega",
-        //     element: <Shipping />,
-        //   },
-        //   {
-        //     path: "troca-e-devolucao",
-        //     element: <ExchangeAndReturn />,
-        //   },
-        //   {
-        //     path: "seguranca-e-privacidade",
-        //     element: <Security />,
-        //   },
-        {
-          path: "contato",
-          element: <Contact />,
+          path: "institucionais",
+          children: [
+            {
+              path: "sobre",
+              element: <About />,
+            },
+            {
+              path: "forma-de-pagamento",
+              element: <ExampleSection />,
+            },
+            {
+              path: "entrega",
+              element: <ExampleSection />,
+            },
+            {
+              path: "troca-e-devolucao",
+              element: <ExampleSection />,
+            },
+            {
+              path: "seguranca-e-privacidade",
+              element: <ExampleSection />,
+            },
+            {
+              path: "contato",
+              element: <Contact />,
+            },
+          ],
         },
       ],
     },

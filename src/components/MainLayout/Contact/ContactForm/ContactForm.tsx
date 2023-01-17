@@ -1,12 +1,12 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
-import FormSchema from "../../schema/FormSchema";
 
+import FormSchema from "../../../../schema/FormSchema";
 import { CustomInput } from "../CustomInput/CustomInput";
 
 import styles from "./ContactForm.module.scss";
 
-interface FormValues {
+export interface FormValues {
   name: string;
   email: string;
   cpf: string;
@@ -36,8 +36,10 @@ const ContactForm = () => {
     console.log(values);
     clientsList.push(values);
     console.log(clientsList);
-    resetForm();
-    setTimeout(() => setSubmitting(false), 3000);
+    setTimeout(() => {
+      setSubmitting(false);
+      resetForm();
+    }, 2000);
   };
 
   return (
@@ -47,9 +49,7 @@ const ContactForm = () => {
         initialValues={initialValues}
         validationSchema={FormSchema}
       >
-        {({
-          isSubmitting,
-        }) => (
+        {({ isSubmitting }) => (
           <Form>
             <div className={styles["form-col"]}>
               <label htmlFor="name">Nome</label>
@@ -66,11 +66,7 @@ const ContactForm = () => {
             </div>
             <div className={styles["form-col"]}>
               <label htmlFor="email">E-mail</label>
-              <CustomInput
-                id="email"
-                name="email"
-                placeholder="Seu e-mail"
-              />
+              <CustomInput id="email" name="email" placeholder="Seu e-mail" />
               <ErrorMessage
                 component="span"
                 name="email"
@@ -136,15 +132,7 @@ const ContactForm = () => {
             <div className={styles["terms-col"]}>
               <span>* </span>
               <label htmlFor="acceptedTerms">Declaro que li e aceito</label>
-              {/* <div className={styles["custom-checkbox"]}></div> */}
-              <Field
-                type="checkbox"
-                id="acceptedTerms"
-                name="acceptedTerms"
-                // className={
-                //   errors.acceptedTerms && touched.acceptedTerms && styles["invalid"]
-                // }
-              />
+              <Field type="checkbox" id="acceptedTerms" name="acceptedTerms" />
             </div>
 
             <button className={styles["submit-button"]} type="submit">
