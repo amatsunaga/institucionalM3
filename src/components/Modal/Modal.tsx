@@ -6,7 +6,6 @@ import { List } from "../List/List";
 import closeIcon from "./assets/close-icon.svg";
 
 import styles from "./Modal.module.scss";
-
 interface ModalProps {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
