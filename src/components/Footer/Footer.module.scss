@@ -3,24 +3,22 @@
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
-    // gap: 158px;
 
     @media screen and (width <= 1024px) {
+      padding: 24px 16px;
       flex-direction: column;
       gap: 12px;
-      padding: 24px 16px;
-
     }
 
     .social-links {
-      p {
+      a {
+        margin: 12px 0 0;
         font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 16px;
         color: #303030;
-        margin: 12px 0 0;
 
         @media screen and (width >= 2500px) {
           font-size: 28px;

@@ -1,57 +1,58 @@
 import React, { useState, useContext } from "react";
-import { WidthContext } from "../../../contexts/WidthContext";
+
 import { List } from "../../List/List";
+import { WidthContext } from "../../../contexts/WidthContext";
 
 import styles from "./SiteMap.module.scss";
 
 const institucionalLinks = [
   {
     name: "Quem Somos",
-    value: "sobre",
+    value: "institucionais/sobre",
   },
   {
     name: "Política de Privacidade",
-    value: "politica-de-privacidade",
+    value: "institucionais/seguranca-e-privacidade",
   },
   {
     name: "Segurança",
-    value: "seguranca-e-privacidade",
+    value: "institucionais/seguranca-e-privacidade",
   },
   {
     name: "Seja um Revendedor",
-    value: "seja-um-revendedor",
+    value: "institucionais/contato",
   },
 ];
 
 const duvidasLinks = [
   {
     name: "Entrega",
-    value: "entrega",
+    value: "institucionais/entrega",
   },
   {
     name: "Pagamento",
-    value: "forma-de-pagamento",
+    value: "institucionais/forma-de-pagamento",
   },
   {
     name: "Trocas e Devoluções",
-    value: "troca-e-devolucao",
+    value: "institucionais/troca-e-devolucao",
   },
   {
     name: "Dúvidas Frequentes",
-    value: "duvidas-frequentes",
+    value: "institucionais/troca-e-devolucao",
   },
 ];
 
 const faleConoscoLinks = [
   {
     name: "Atendimento ao Consumidor",
-    phoneNumber: "(11) 4159 9504",
-    value: "atendimento-ao-consumidor",
+    phoneNumber: "+1141599504",
+    value: "(11) 4159 9504",
   },
   {
     name: "Atendimento Online",
-    phoneNumber: "(11) 4159 9504",
-    value: "politica-de-privacidade",
+    phoneNumber: "+1141599504",
+    value: "(11) 4159 9504",
   },
 ];
 

@@ -1,22 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { ReactComponent as Facebook } from "./assets/facebook-icon.svg";
+import { ReactComponent as Instagram } from "./assets/instagram-icon.svg";
+import { ReactComponent as Twitter } from "./assets/twitter-icon.svg";
+import { ReactComponent as Youtube } from "./assets/youtube-icon.svg";
+import { ReactComponent as Linkedin } from "./assets/linkedin-icon.svg";
 
 import styles from "./SocialMedia.module.scss";
-
-import { ReactComponent as Facebook } from "../../../assets/svg/facebook-icon.svg";
-import { ReactComponent as Instagram } from "../../../assets/svg/instagram-icon.svg";
-import { ReactComponent as Twitter } from "../../../assets/svg/twitter-icon.svg";
-import { ReactComponent as Youtube } from "../../../assets/svg/youtube-icon.svg";
-import { ReactComponent as Linkedin } from "../../../assets/svg/linkedin-icon.svg";
 
 const socialMediaLinks = [
   {
     icon: <Facebook />,
-    value: "https://facebook.com",
+    value: "https://www.facebook.com/digitalm3",
   },
   {
     icon: <Instagram />,
-    value: "https://instagram.com",
+    value: "https://www.instagram.com/m3.ecommerce",
   },
   {
     icon: <Twitter />,
@@ -24,11 +23,11 @@ const socialMediaLinks = [
   },
   {
     icon: <Youtube />,
-    value: "https://youtube.com",
+    value: "https://www.youtube.com/@m3e-commerce796",
   },
   {
     icon: <Linkedin />,
-    value: "https://linkedin.com",
+    value: "https://www.linkedin.com/company/m3ecommerce/",
   },
 ];
 
@@ -39,8 +38,9 @@ const SocialMedia = () => {
         <ul className={styles["menu-list"]}>
           {socialMediaLinks.map((item, index) => (
             <li key={index}>
-              <a href={item.value} target="_blank">{item.icon}</a>
-              {/* <Link to={{pathname: item.value}}>{item.icon}</Link> */}
+              <a href={item.value} target="_blank" rel="noreferrer">
+                {item.icon}
+              </a>
             </li>
           ))}
         </ul>

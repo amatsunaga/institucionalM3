@@ -1,16 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import whatsapp from "./assets/whatsapp-icon.svg";
+import arrowUp from "./assets/arrow-up.svg";
 
 import styles from "./FloatingIcons.module.scss";
-
-import whatsapp from "../assets/whatsapp-icon.svg";
-import arrowUp from "../assets/arrow-up.svg";
-import { Link } from "react-router-dom";
 
 const FloatingIcons = () => {
   return (
     <div className={styles["floating-icons-wrapper"]}>
       <button className={styles["whatsapp-button"]}>
-        <a href="web.whatsapp.com">
+        <a href="https://wa.me/551141599504" target="blank">
           <img src={whatsapp} alt="Ícone do WhatsApp" />
         </a>
       </button>

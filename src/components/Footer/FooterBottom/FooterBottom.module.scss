@@ -1,19 +1,18 @@
 .container {
-  background: #000000;
+  padding: 15px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //   gap: 110.41px;
-  padding: 15px 100px;
+  background: #000000;
 
   @media screen and (width <= 1024px) {
+    padding: 15px 16px;
     display: grid;
     grid-template-areas:
       "paymentSolutions"
       "address"
       "authors";
     gap: 15px;
-    padding: 15px 16px;
   }
 
   .address {
@@ -24,7 +23,6 @@
     line-height: 12px;
     text-transform: capitalize;
     color: #ffffff;
-    // background-color: yellow;
 
     p {
       margin: 0;
@@ -43,10 +41,7 @@
   .payment-solutions {
     display: flex;
     align-items: center;
-    // justify-content: center;
     gap: 12px;
-    // justify-self: center;
-    // background-color: cyan;
 
     @media screen and (width <= 1024px) {
       grid-area: paymentSolutions;
@@ -56,11 +51,9 @@
       gap: 11px;
     }
 
-    .menu-list {
+    .payment-list {
       margin: 0;
       padding: 0;
-      list-style: none;
-      text-decoration: none;
       display: flex;
       gap: 12px;
 
@@ -69,8 +62,6 @@
       }
 
       li {
-        //   transition: all 0.2s ease-in-out;
-
         img {
           width: 35px;
           height: 20px;
@@ -85,12 +76,6 @@
             width: 100%; //30px;
             height: 17px;
           }
-
-          // &:hover {
-          //   border-radius: 50%;
-          //   background: #292929;
-          //   color: white;
-          // }
         }
       }
     }
@@ -127,17 +112,16 @@
   }
 
   .authors {
-    // background-color: magenta;
     display: flex;
-    gap: 13px;
     align-items: center;
-    // justify-self: end;
+    gap: 13px;
 
     @media screen and (width <= 1024px) {
       grid-area: authors;
     }
 
     p {
+      margin: 0;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
@@ -145,7 +129,6 @@
       line-height: 12px;
       text-transform: capitalize;
       color: #ffffff;
-      margin: 0;
 
       @media screen and (width >= 2500px) {
         font-size: 20px;
