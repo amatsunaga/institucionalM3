@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./HeaderBottom.module.scss";
+import styles from "./HeaderNavbar.module.scss";
 
 const navLinks = [
-  { name: "Cursos", value: "cursos" },
-  { name: "Saiba Mais", value: "saiba-mais" },
-  { name: "Institucionais", value: "intitucionais" },
+  { name: "Cursos", value: "/" },
+  { name: "Saiba Mais", value: "/" },
+  { name: "Institucionais", value: "institucionais/sobre" },
 ];
 
-const HeaderBottom = () => {
+const HeaderNavbar = () => {
   return (
     <nav className={styles["navbar"]}>
       <ul className={styles["navbar-list"]}>
@@ -23,4 +23,4 @@ const HeaderBottom = () => {
   );
 };
 
-export { HeaderBottom };
+export { HeaderNavbar };
