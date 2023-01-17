@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
+import { LocationContext } from "../../../contexts/LocationContext";
 
-import styles from "./About.module.scss";
+import styles from "./ExampleSection.module.scss";
 
-const About = () => {
+const ExampleSection = () => {
+  const [title, setTitle] = useState("");
+  const { path } = useContext(LocationContext);
+
+  const updateTitle = () => {
+    if (path === "/institucionais/forma-de-pagamento") {
+      setTitle("Forma de Pagamento");
+    } else if (path === "/institucionais/entrega") {
+      setTitle("Entrega");
+    } else if (path === "/institucionais/troca-e-devolucao") {
+      setTitle("Troca e Devolução");
+    } else if (path === "/institucionais/seguranca-e-privacidade") {
+      setTitle("Segurança e Privacidade");
+    }
+  };
+
+  useEffect(() => {
+    updateTitle();
+  }, [path]);
+
   return (
     <section className={styles["section-container"]}>
-      <h2 className={styles["section-title"]}>Sobre</h2>
+      <h2 className={styles["section-title"]}>{title}</h2>
       <div className={styles["section-description"]}>
         <p className={styles["section-content"]}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -39,4 +59,4 @@ const About = () => {
   );
 };
 
-export { About };
+export { ExampleSection };

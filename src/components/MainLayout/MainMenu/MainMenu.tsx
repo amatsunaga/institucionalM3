@@ -1,38 +1,39 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { LocationContext } from "../../contexts/LocationContext";
+
+import { LocationContext } from "../../../contexts/LocationContext";
 
 import styles from "./MainMenu.module.scss";
 
 const MainMenuItems = [
   {
     name: "Sobre",
-    value: "sobre",
+    value: "institucionais/sobre",
     className: "sobre",
   },
   {
     name: "Forma de Pagamento",
-    value: "forma-de-pagamento",
+    value: "institucionais/forma-de-pagamento",
     className: "formaPagamento",
   },
   {
     name: "Entrega",
-    value: "entrega",
+    value: "institucionais/entrega",
     className: "entrega",
   },
   {
     name: "Troca e Devolução",
-    value: "troca-e-devolucao",
+    value: "institucionais/troca-e-devolucao",
     className: "trocaDevolucao",
   },
   {
     name: "Segurança e Privacidade",
-    value: "seguranca-e-privacidade",
+    value: "institucionais/seguranca-e-privacidade",
     className: "segurancaPrivacidade",
   },
   {
     name: "Contato",
-    value: "contato",
+    value: "institucionais/contato",
     className: "contato",
   },
 ];
@@ -50,7 +51,7 @@ const MainMenu = () => {
   const { path } = useContext(LocationContext);
 
   const updateLocation = () => {
-    if (path === "/sobre") {
+    if (path === "/institucionais/sobre") {
       setIsActive({
         sobre: true,
         formaPagamento: false,
@@ -59,7 +60,7 @@ const MainMenu = () => {
         segurancaPrivacidade: false,
         contato: false,
       });
-    } else if (path === "/formaPagamento") {
+    } else if (path === "/institucionais/forma-de-pagamento") {
       setIsActive({
         sobre: false,
         formaPagamento: true,
@@ -68,7 +69,7 @@ const MainMenu = () => {
         segurancaPrivacidade: false,
         contato: false,
       });
-    } else if (path === "/entrega") {
+    } else if (path === "/institucionais/entrega") {
       setIsActive({
         sobre: false,
         formaPagamento: false,
@@ -77,7 +78,7 @@ const MainMenu = () => {
         segurancaPrivacidade: false,
         contato: false,
       });
-    } else if (path === "/trocaDevolucao") {
+    } else if (path === "/institucionais/troca-e-devolucao") {
       setIsActive({
         sobre: false,
         formaPagamento: false,
@@ -86,7 +87,7 @@ const MainMenu = () => {
         segurancaPrivacidade: false,
         contato: false,
       });
-    } else if (path === "/segurancaPrivacidade") {
+    } else if (path === "/institucionais/seguranca-e-privacidade") {
       setIsActive({
         sobre: false,
         formaPagamento: false,
@@ -95,7 +96,7 @@ const MainMenu = () => {
         segurancaPrivacidade: true,
         contato: false,
       });
-    } else if (path === "/contato") {
+    } else if (path === "/institucionais/contato") {
       setIsActive({
         sobre: false,
         formaPagamento: false,
