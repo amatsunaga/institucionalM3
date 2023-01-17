@@ -1,0 +1,73 @@
+.section-container {
+  margin-left: 30px;
+  padding: 10px 0;
+  padding: 10px 0 26.56px;
+
+  @media screen and (width <= 1024px) {
+    padding: 0;
+    margin: 0;
+  }
+
+  .section-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #292929; // #000000 ??
+    margin: 0 0 12px;
+
+    @media screen and (width >= 2500px) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    @media screen and (width <= 1024px) {
+      text-align: center;
+    }
+  }
+
+  .section-description {
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (width >= 2500px) {
+      height: 376px;
+    }
+
+    @media screen and (width <= 1024px) {
+      height: 142px;
+      gap: 20px;
+      overflow: scroll;
+    }
+
+    @media screen and (width <= 480px) {
+      height: 344px;
+    }
+
+    .section-content {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      color: #7d7d7d;
+      margin: 0;
+      padding-right: 2px;
+
+      @media screen and (width >= 2500px) {
+        font-size: 26px;
+        line-height: 30px;
+      }
+
+      @media screen and (width <= 1024px) {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+        padding-right: 1px;
+      }
+    }
+  }
+}

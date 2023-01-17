@@ -1,0 +1,10 @@
+.container {
+  background: #000000;
+
+  &.header-mobile {
+    padding: 25px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}

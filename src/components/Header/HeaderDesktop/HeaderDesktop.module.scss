@@ -1,0 +1,14 @@
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 22px 100px;
+    border-bottom: 1px solid #c4c4c4;
+  
+    .login-cart-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      gap: 55px;
+    }
+  }

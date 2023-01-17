@@ -1,0 +1,16 @@
+.logo-wrapper {
+  img {
+    width: 136px;
+    height: 25.86px;
+    display: block;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    @media screen and (width >= 2500px) {
+      width: 265.62px;
+      height: 50.5px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.container {
+  width: 65.46%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); //155px
+  gap: 121px;
+
+  @media screen and (width >= 2500px) {
+    width: 66.56%;
+    gap: 293px;
+  }
+
+  @media screen and (width <= 1024px) {
+    width: 100%;
+    grid-template-columns: 100%;
+    gap: 12px;
+  }
+
+  .submenu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .subtitle {
+      @media screen and (width <= 1024px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .subtitle-text {
+        margin: 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #303030;
+
+        @media screen and (width >= 2500px) {
+          font-size: 28px;
+          line-height: 33px;
+        }
+
+        @media screen and (width <= 1024px) {
+          text-transform: none;
+        }
+      }
+
+      .open-icon {
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 7.8px;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background: #000000;
+          transform: translate(-50%, -50%);
+        }
+        &::after {
+          content: "";
+          width: 1px;
+          height: 8.28px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background: #000000;
+          transform: translate(-50%, -50%);
+        }
+
+        &.active {
+          &::after {
+            display: none;
+          }
+        }
+
+        @media screen and (width > 1024px) {
+          display: none;
+        }
+      }
+    }
+
+    .list-items {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      li {
+        transition: all 0.2s ease-in-out;
+
+        a {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #303030;
+          text-transform: capitalize;
+          text-decoration: none;
+
+          &:hover {
+            filter: brightness(2);
+          }
+
+          @media screen and (width >= 2500px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+
+        p {
+          margin: 0 0 12px;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #303030;
+          text-transform: capitalize;
+
+          @media screen and (width >= 2500px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+
+        &:last-child {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

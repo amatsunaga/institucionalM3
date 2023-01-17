@@ -1,0 +1,159 @@
+.container {
+  padding: 15px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+
+  @media screen and (width <= 1024px) {
+    padding: 15px 16px;
+    display: grid;
+    grid-template-areas:
+      "paymentSolutions"
+      "address"
+      "authors";
+    gap: 15px;
+  }
+
+  .address {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: capitalize;
+    color: #ffffff;
+
+    p {
+      margin: 0;
+    }
+
+    @media screen and (width >= 2500px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    @media screen and (width <= 1024px) {
+      grid-area: address;
+    }
+  }
+
+  .payment-solutions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media screen and (width <= 1024px) {
+      grid-area: paymentSolutions;
+    }
+
+    @media screen and (width <= 480px) {
+      gap: 11px;
+    }
+
+    .payment-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 12px;
+
+      @media screen and (width <= 480px) {
+        gap: 11px;
+      }
+
+      li {
+        img {
+          width: 35px;
+          height: 20px;
+          display: block;
+
+          @media screen and (width >= 2500px) {
+            width: 70px;
+            height: 40px;
+          }
+
+          @media screen and (width <= 480px) {
+            width: 100%; //30px;
+            height: 17px;
+          }
+        }
+      }
+    }
+
+    span {
+      width: 1px;
+      height: 24px;
+      background: #c4c4c4;
+
+      @media screen and (width >= 2500px) {
+        height: 48px;
+      }
+
+      @media screen and (width <= 480px) {
+        height: 20px;
+      }
+    }
+
+    img {
+      width: 54.61px;
+      height: 34px;
+      display: block;
+
+      @media screen and (width >= 2500px) {
+        width: 106px;
+        height: 66px;
+      }
+
+      @media screen and (width <= 480px) {
+        width: 100%; //45px;
+        height: 28px;
+      }
+    }
+  }
+
+  .authors {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    @media screen and (width <= 1024px) {
+      grid-area: authors;
+    }
+
+    p {
+      margin: 0;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      text-transform: capitalize;
+      color: #ffffff;
+
+      @media screen and (width >= 2500px) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    .vtex-icon {
+      width: 44.92px;
+      height: 16px;
+
+      @media screen and (width >= 2500px) {
+        width: 82.22px;
+        height: 30px;
+      }
+    }
+
+    .m3-icon {
+      width: 28.66px;
+      height: 15.65px;
+
+      @media screen and (width >= 2500px) {
+        width: 54.95px;
+        height: 30px;
+      }
+    }
+  }
+}

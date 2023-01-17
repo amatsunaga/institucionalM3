@@ -1,0 +1,16 @@
+.cart-icon {
+  img {
+    width: 28px;
+    height: 28px;
+    display: block;
+
+    &:hover {
+      filter: brightness(0.5);
+    }
+
+    @media screen and (width >= 2500px) {
+      width: 54.68px;
+      height: 54.68px;
+    }
+  }
+}

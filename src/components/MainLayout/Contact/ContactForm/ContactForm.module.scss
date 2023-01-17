@@ -1,0 +1,169 @@
+.form-wrapper {
+  width: 100%;
+  padding-bottom: 26.56px;
+  position: relative;
+
+  @media screen and (width >= 2500px) {
+    padding-bottom: 40px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .form-col {
+    margin-bottom: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      padding: 0 15px 12px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #100d0e;
+
+      @media screen and (width >= 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+    }
+
+    input {
+      padding: 15px 20px;
+      border: 1px solid #100d0e;
+      border-radius: 25px;
+      outline: 0;
+      background: #ffffff;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+
+      @media screen and (width >= 2500px) {
+        font-size: 28px;
+        line-height: 33px;
+      }
+
+      &::placeholder {
+        color: #b9b7b7;
+      }
+    }
+  }
+
+  .invalid-form-feedback {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ff0000;
+
+    @media screen and (width >= 2500px) {
+      top: 17px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .terms-col {
+    margin: 1.58px 0 12.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    @media screen and (width >= 2500px) {
+      margin: 0 0 12.85px;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    span {
+      color: #ff0000;
+    }
+
+    label {
+      color: #100d0e;
+      text-decoration: underline;
+    }
+
+    input {
+      margin: 0 0 0 4.28px;
+      width: 18.64px;
+      height: 18px;
+      border-radius: 3px;
+
+      @media screen and (width >= 2500px) {
+        width: 36.4px;
+        height: 35.15px;
+      }
+    }
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 17px 0;
+    border: 0;
+    border-radius: 25px;
+    outline: 0;
+    background: #000000;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.5);
+    }
+
+    @media screen and (width >= 2500px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .success-wrapper {
+    .success-message {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #008000;
+
+      @media screen and (width >= 2500px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+}

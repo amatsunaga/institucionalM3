@@ -1,0 +1,29 @@
+.container {
+  .menu-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+
+    li {
+      a {
+        transition: all 0.2s ease-in-out;
+
+        svg {
+          width: 35px;
+          height: 35px;
+
+          &:hover {
+            border-radius: 50%;
+            filter: brightness(1.8);
+          }
+
+          @media screen and (width >= 2500px) {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+}
