@@ -11,11 +11,11 @@ import styles from "./SocialMedia.module.scss";
 const socialMediaLinks = [
   {
     icon: <Facebook />,
-    value: "https://www.facebook.com/digitalm3/",
+    value: "https://www.facebook.com/digitalm3",
   },
   {
     icon: <Instagram />,
-    value: "https://www.instagram.com/m3.ecommerce/",
+    value: "https://www.instagram.com/m3.ecommerce",
   },
   {
     icon: <Twitter />,

@@ -15,7 +15,7 @@ const List = (props: ListProps) => {
         item.phoneNumber ? (
           <li key={index}>
             <p>{item.name}</p>
-            <Link to={item.value}>{item.phoneNumber}</Link>
+            <a href={`tel:${item.phoneNumber}`}>{item.value}</a>
           </li>
         ) : (
           <li key={index}>

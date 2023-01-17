@@ -1,11 +1,12 @@
 import React from "react";
-import { FloatingIcons } from "./FloatingIcons/FloatingIcons";
 
-import styles from "./Footer.module.scss";
+import { FloatingIcons } from "./FloatingIcons/FloatingIcons";
 import { FooterBottom } from "./FooterBottom/FooterBottom";
 import { Newsletter } from "./Newsletter/Newsletter";
 import { SiteMap } from "./SiteMap/SiteMap";
 import { SocialMedia } from "./SocialMedia/SocialMedia";
+
+import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
         <SiteMap />
         <div className={styles["social-links"]}>
           <SocialMedia />
-          <p>www.loremipsum.com</p>
+          <a href="https://m3ecommerce.com/">www.loremipsum.com</a>
         </div>
         <FloatingIcons />
       </div>

@@ -2,27 +2,25 @@
   .menu-list {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     display: flex;
     gap: 10px;
 
     li {
-      transition: all 0.2s ease-in-out;
-
       a {
+        transition: all 0.2s ease-in-out;
+
         svg {
           width: 35px;
           height: 35px;
 
+          &:hover {
+            border-radius: 50%;
+            filter: brightness(1.8);
+          }
+
           @media screen and (width >= 2500px) {
             width: 70px;
             height: 70px;
-          }
-
-          &:hover {
-            filter: brightness(1.5);
-            border-radius: 50%;
           }
         }
       }
