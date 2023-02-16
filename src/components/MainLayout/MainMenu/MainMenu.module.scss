@@ -9,7 +9,6 @@
   }
 
   li {
-    padding: 10px 16px;
     transition: all 0.2s ease-in-out;
 
     @media screen and (width <= 1024px) {
@@ -17,6 +16,8 @@
     }
 
     a {
+      padding: 10px 16px;
+      display: block;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
